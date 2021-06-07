@@ -26,7 +26,5 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn2 = findViewById(R.id.button20);
 
-
-
     }
 }
