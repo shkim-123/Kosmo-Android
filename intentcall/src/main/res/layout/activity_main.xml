@@ -12,43 +12,112 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:gravity="center"
-        android:text="선택해보시오"
-        android:textColor="#000000" />
+        android:text="선택하세요"
+        android:textColor="#000000"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#ffccbc"
         android:onClick="onHomepage"
+        android:padding="15dp"
         android:text="홈페이지"
         android:textColor="#000000"
-        app:backgroundTint="#ffccbc" />
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#ffccbc"
         android:onClick="onPhone"
+        android:padding="15dp"
         android:text="전화"
-        app:backgroundTint="#ffccbc"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#ffccbc"
         android:onClick="onGallery"
+        android:padding="15dp"
         android:text="갤러리"
-        app:backgroundTint="#ffccbc"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/my_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:orientation="vertical"
+        android:rotation="0"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#b71c1c"
+            android:onClick="onRed"
+            android:padding="15dp"
+            android:text="레드"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#0d47a1"
+            android:onClick="onBlue"
+            android:padding="15dp"
+            android:text="블루"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFEE"
+            android:onClick="onReset"
+            android:padding="15dp"
+            android:text="리셋"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#cb9b8c"
         android:onClick="onFinish"
+        android:padding="15dp"
+        android:rotation="3"
+        android:rotationX="3"
+        android:rotationY="10"
         android:text="종료"
-        app:backgroundTint="#cb9b8c"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:textSize="15sp" />
 
 </LinearLayout>
