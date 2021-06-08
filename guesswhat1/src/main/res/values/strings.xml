@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">guesswhat1</string>
+    <string name="reset">리셋</string>
 </resources>
