@@ -2,3 +2,5 @@ rootProject.name = "My Application"
 include ':app'
 include ':app_linear'
 include ':guesswhat1'
+include ':guesswhat2'
+include ':intentcall'
