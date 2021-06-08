@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.calc_layout);
 
-       // Button btn = findViewById(R.id.button1);
+        // Button btn = findViewById(R.id.button1);
 
 //        btn.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button btn2 = findViewById(R.id.button20);
-        
+
         Button plus = findViewById(R.id.button15);
         Button minus = findViewById(R.id.button11);
         Button multi = findViewById(R.id.button71);
@@ -47,11 +47,14 @@ public class MainActivity extends AppCompatActivity {
         Button n8 = findViewById(R.id.button6);
         Button n9 = findViewById(R.id.button7);
         Button n0 = findViewById(R.id.button17);
+        TextView tv = findViewById(R.id.textView2);
+        TextView tv2 = findViewById(R.id.textView3);
 
         n1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 o1 = Integer.valueOf(n1.getText().toString());
+                tv.setText("" + o1);
             }
         });
 
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 op = 0;
+                tv2.setText("" + o1 + "+");
             }
         });
 
@@ -66,16 +70,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 o2 = 3;
+                tv.setText("" + o2);
             }
         });
 
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView tv = findViewById(R.id.textView2);
 
-                if(op == 0){ // plus
-                    tv.setText(""+(o1 + o2));
+                if (op == 0) { // plus
+                    tv.setText("" + (o1 + o2));
+                    tv2.setText("" + o1 + "+" + o2 + "=" );
                 }
             }
         });
